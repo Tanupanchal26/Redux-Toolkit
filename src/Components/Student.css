@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #637180;
+    margin: 10;
+    padding: 100px;
+    text-align: center;
+    
+
+  }
+  th,td {
+    padding: 10px;
+    border: 1px solid #b2a8a8;
+    color: #e9e6e6;
+    text-align: left;
+    font-size: 16px;
+    background-color: #0a0a0a;
+  }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-spacing: 0;
+        overflow-x: auto;
+    }
+
+  
+  h2 {
+    text-align: center;
+    color: #221313;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    padding: 10px;
+
+    
+  }
+  
+  form {
+    background: #a07272;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+
+    margin: 0 auto;
+  }
+  
+  div {
+    margin-bottom: 15px;
+    color: #221313;
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #221313;
+
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #a88b8b;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #204b29;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    
+  }
+  
+  button[type="button"]:hover {
+    background-color: #923740;
+
+  }
