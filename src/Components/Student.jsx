@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { editStudent } from '../feature/studentSlice';
+import { editStudent,  } from '../feature/studentSlice';
+import { removestudent } from '../feature/studentSlice'; // Adjust the path as needed
+
+
+
 import './Student.css';
 
 
@@ -16,6 +20,11 @@ function Student() {
     age: '',
     batch: ''
   });
+
+ 
+
+
+
 
   const handleEditClick = (student) => {
     setEditingStudent(student.id);
@@ -33,6 +42,7 @@ function Student() {
       setEditingStudent(null);
     }
   };
+
 
   return (
     <div>
@@ -61,9 +71,12 @@ function Student() {
                 ) : (
                 
                  <button onClick={() => handleEditClick(student)}>Edit</button>
-            
+
                  
                 )}
+               <button onClick={() => dispatch(removestudent(student.id))}>
+                                 remove
+                               </button>
               </td>
             </tr>
           ))}

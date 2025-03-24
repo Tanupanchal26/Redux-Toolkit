@@ -15,6 +15,7 @@ const studentSlice = createSlice({
   name: 'students',
   initialState,
   reducers: {
+    // Edit student
     editStudent: (state, action) => {
       const { id, name, age, course, batch } = action.payload;
       const existingStudent = state.students.find(student => student.id === id);
@@ -25,8 +26,13 @@ const studentSlice = createSlice({
         existingStudent.batch = batch;
       }
     },
+
+    // Delete student
+    removestudent: (state, action) => {
+      return state.filter((student) => student.id !== action.payload);
+    },
   },
 });
 
-export const { editStudent } = studentSlice.actions;
+export const { editStudent, removestudent } = studentSlice.actions;
 export default studentSlice.reducer;

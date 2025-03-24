@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';import './App.css';
 import Home from './Components/Home';
 import ContactUs from './Components/ContactUs';
 import Student from './Components/Student';
-import Page from './Components/page';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 function App() {
@@ -32,21 +32,19 @@ function App() {
           
           </div>
         </nav>
-       <ul>
-       <button  ><li>
-       <Link to="/page ">Add Student</Link>  </li></button>
-       </ul>
+       
+     <button >ADD STUDENT</button>
          
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/student" element={<Student />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/page" element={<Page />} />
         
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
