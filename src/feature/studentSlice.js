@@ -27,10 +27,12 @@ const studentSlice = createSlice({
       }
     },
 
-    // Delete student
-    removestudent: (state, action) => {
-      return state.filter((student) => student.id !== action.payload);
-    },
+
+ // Reducer for removing student
+removeStudent: (state, action) => {
+  return state.students.filter((student) => student.id !== action.payload);
+}
+
   },
 });
 

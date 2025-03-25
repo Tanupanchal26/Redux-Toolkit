@@ -23,12 +23,14 @@ function Student() {
 
  
 
-
+  const handleRemoveStudent = (id) => {
+    dispatch(removestudent(id)); 
+  };
 
 
   const handleEditClick = (student) => {
     setEditingStudent(student.id);
-    setStudentDetails({ ...student });
+    setStudentDetails({ ...student }); 
   };
 
   const handleInputChange = (e) => {
@@ -74,9 +76,7 @@ function Student() {
 
                  
                 )}
-               <button onClick={() => dispatch(removestudent(student.id))}>
-                                 remove
-                               </button>
+                <button onClick={() => handleRemoveStudent(student.id)}>Remove</button>
               </td>
             </tr>
           ))}
